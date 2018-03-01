@@ -14,6 +14,7 @@
 		80E112522047A10500722398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E112502047A10500722398 /* LaunchScreen.storyboard */; };
 		80E1125D2047A10500722398 /* LoteriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1125C2047A10500722398 /* LoteriaTests.swift */; };
 		80E112682047A10500722398 /* LoteriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E112672047A10500722398 /* LoteriaUITests.swift */; };
+		80E112772047AD1900722398 /* LoteriaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E112762047AD1900722398 /* LoteriaHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		80E112632047A10500722398 /* LoteriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoteriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E112672047A10500722398 /* LoteriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoteriaUITests.swift; sourceTree = "<group>"; };
 		80E112692047A10500722398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E112762047AD1900722398 /* LoteriaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoteriaHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		80E112462047A10500722398 /* Loteria */ = {
 			isa = PBXGroup;
 			children = (
+				80E112752047ACE300722398 /* helper */,
 				80E112472047A10500722398 /* AppDelegate.swift */,
 				80E112492047A10500722398 /* ViewController.swift */,
 				80E1124B2047A10500722398 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				80E112692047A10500722398 /* Info.plist */,
 			);
 			path = LoteriaUITests;
+			sourceTree = "<group>";
+		};
+		80E112752047ACE300722398 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				80E112762047AD1900722398 /* LoteriaHelper.swift */,
+			);
+			name = helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80E1124A2047A10500722398 /* ViewController.swift in Sources */,
+				80E112772047AD1900722398 /* LoteriaHelper.swift in Sources */,
 				80E112482047A10500722398 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.opluss.Loteria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.opluss.Loteria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
